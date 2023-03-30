@@ -1,0 +1,7 @@
+.drugs-by-category-btns > button {
+    width: 100%;
+    height: 50px;
+}
+.btn-group.drugs-by-category-btns {
+    width: 100%;
+}

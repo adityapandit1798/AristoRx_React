@@ -1,0 +1,13 @@
+nav.navbar {
+    background-image: linear-gradient(to right,#3e768f, #3b86a7, #4588a9, #398bac, #3e768f);
+}
+.navbar-left{
+    display: inline-block;
+}
+img.navbar-logo {
+    width: 100px;
+    height: 50px;
+}
+.quick-menu{
+    min-width: 500px;
+}

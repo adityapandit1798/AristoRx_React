@@ -1,0 +1,12 @@
+.card-image {
+    height: 100px;
+    max-width: 100px;
+    align-self: center;
+    min-width: 100px;
+}
+.category-card {
+    width: 150px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}

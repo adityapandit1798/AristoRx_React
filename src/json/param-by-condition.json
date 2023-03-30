@@ -1,0 +1,53 @@
+{    "x:option": [
+        {
+            "@value": "x17373",
+            "text()": "All Conditions",
+            "@icon": "ic_AllConditions.svg"
+        },
+        {
+            "@value": "x8791",
+            "text()": "Flu",
+            "@icon": "Flu.svg"
+        },
+        {
+            "@value": "x8792",
+            "text()": "Heart Disease",
+            "@icon": "ic_heart_disease.svg"
+        },
+        {
+            "@value": "x8793",
+            "text()": "Back Pain",
+            "@icon": "ic_pain.svg"
+        },
+        {
+            "@value": "x8794",
+            "text()": "Sleep Disorder",
+            "@icon": "ic_sleep_disorder.svg"
+        },
+        {
+            "@value": "x879",
+            "text()": "Diabetes",
+            "@icon": "ic_cardio.svg"
+        },
+        {
+            "@value": "x879",
+            "text()": "Pregnancy",
+            "@icon": "ic_newborn.svg"
+        },
+        {
+            "@value": "x879",
+            "text()": "Brain Tumor",
+            "@icon": "ic_brain.svg"
+        },
+        {
+            "@value": "x879",
+            "text()": "Gastrointestinal Disorders",
+            "@icon": "ic_stomach.svg"
+        },
+        {
+            "@value": "x879",
+            "text()": "Knee Pain",
+            "@icon": "ic_knee_pain.svg"
+        }
+    ]
+}

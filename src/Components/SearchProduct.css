@@ -1,0 +1,15 @@
+.search-product{
+    background: url(../../public/images/background.png);
+    min-height: 50vh;
+    background-position: bottom;
+    background-size: cover;
+}
+.search-input ,.search-icon {
+    border-radius: 23px;
+}
+.search-box-heading {
+    color: #ffff;
+    font-size: 23px;
+    font-weight: 400;
+    text-align: center;
+}

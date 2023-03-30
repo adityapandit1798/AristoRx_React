@@ -1,0 +1,129 @@
+{
+    "@Name": "labelerName",
+    "@special": true,
+    "@check-type": "checkbox",
+    "@check-action": "trigger",
+    "x:title": "Drugs by Companies",
+    "x:option": [
+        {
+            "@value": "x17373",
+            "text()": "All Companies",
+            "@icon": "All_companies.svg"
+        },
+        {
+            "@value": "x879",
+            "text()": "1530",
+            "@CompanyName": "Pfizer",
+            "@icon": "Pfizer.svg"
+        },
+        {
+            "@value": "x879",
+            "text()": "936",
+            "@CompanyName": "GSK",
+            "@icon": "GSK_logo.svg"
+        },
+        {
+            "@value": "x879",
+            "text()": "868",
+            "@CompanyName": "Novartis",
+            "@icon": "Novartis-Logo.svg"
+        },
+        {
+            "@value": "x879",
+            "text()": "805",
+            "@CompanyName": "Sanofi",
+            "@icon": "Sanofi_logo.svg"
+        },
+        {
+            "@value": "x879",
+            "text()": "772",
+            "@CompanyName": "Merck",
+            "@icon": "Merck_Logo.svg"
+        },
+        {
+            "@value": "x879",
+            "text()": "684",
+            "@CompanyName": "JohnsonandJohnson",
+            "@icon": "JohnsonandJohnson_logo.svg"
+        },
+        {
+            "@value": "x879",
+            "text()": "426",
+            "@CompanyName": "Bayer",
+            "@icon": "Bayer_logo.svg"
+        },
+        {
+            "@value": "x879",
+            "text()": "347",
+            "@CompanyName": "AstraZeneca",
+            "@icon": "AstraZeneca_logo.svg"
+        },
+        {
+            "@value": "x879",
+            "text()": "291",
+            "@CompanyName": "Allergan",
+            "@icon": "Allergan_logo.svg"
+        },
+        {
+            "@value": "x879",
+            "text()": "208",
+            "@CompanyName": "Wyeth",
+            "@icon": "Wyeth_logo.svg"
+        },
+        {
+            "@value": "x879",
+            "text()": "106",
+            "@CompanyName": "AbbVie",
+            "@icon": "AbbVie_logo.svg"
+        },
+        {
+            "@value": "x879",
+            "text()": "143",
+            "@CompanyName": "Pharmacia",
+            "@icon": "Pharmacia_logo.svg"
+        },
+        {
+            "@value": "x879",
+            "text()": "124",
+            "@CompanyName": "Bristol-Myers_Squibb",
+            "@icon": "Bristol-Myers_Squibb_logo.svg"
+        }
+        ,  {
+            "@value": "x879",
+            "text()": "113",
+            "@CompanyName": "Novo_Nordisk",
+            "@icon": "Novo_Nordisk_logo.svg"
+        },
+        {
+            "@value": "x879",
+            "text()": "110",
+            "@CompanyName": "Eli_Lilly_and_Company",
+            "@icon": "Eli_Lilly_and_Company_logo.svg"
+        },
+        {
+            "@value": "x879",
+            "text()": "74",
+            "@CompanyName": "CSL_Behring",
+            "@icon": "CSL_Behring_logo.svg"
+        },
+        {
+            "@value": "x879",
+            "text()": "58",
+            "@CompanyName": "Gilead",
+            "@icon": "Gilead_Sciences_Logo.svg"
+        },
+        {
+            "@value": "x879",
+            "text()": "56",
+            "@CompanyName": "Abbott",
+            "@icon": "Abbott_Laboratories_logo.svg"
+        },
+        {
+            "@value": "x879",
+            "text()": "56",
+            "@CompanyName": "agrochem",
+            "@icon": "agrochem-logo.svg"
+        }
+
+    ]
+}
