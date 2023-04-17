@@ -10,10 +10,10 @@ export default class DrugsByCondition extends Component {
       <div>
         <div className="container">
         <div className="row" style={{justifyContent : 'center'}}>
-        { data['x:option'].map(x=>{
+        { data['x:option'].map((x,index)=>{
             return (
                 <>
-                 <div key={x['@value']} className="col-3 card category-card">
+                 <div key={index} className="col-3 card category-card">
                     <img src={`./images/${x["@icon"]}`} className="card-img-top card-image" alt="..."/>
                     <div className="card-body">
                     <p className="card-text">{x['text()']}</p>

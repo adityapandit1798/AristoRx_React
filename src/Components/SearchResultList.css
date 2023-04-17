@@ -1,0 +1,6 @@
+.card-body:hover > .more-info {
+    display: block;
+}
+.more-info{
+    display: none;
+}

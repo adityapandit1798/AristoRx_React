@@ -5,7 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHouse,faNoteSticky,faBell,faUserDoctor,faHeart,faPrescription,faHandHoldingMedical ,faClipboard,faCircleExclamation,faGear} from '@fortawesome/free-solid-svg-icons'
 
 function Menu() {
-  const isLoggedIn = useSelector(state => state.isLoggedIn);
+  const isLoggedIn = useSelector(state => state.isLoggedIn.state);
+  const username = useSelector(state => state.isLoggedIn.username);
   return (
     <div>
 <div className="offcanvas offcanvas-start" data-bs-scroll="true" tabIndex="-1" id="menu" aria-labelledby="menuLabel">
@@ -20,7 +21,7 @@ function Menu() {
   <div className="col-7">
 <div className="row">
   <div className="col-12">
-    {isLoggedIn === true ?  <strong>Josep tyler</strong>: <strong> Welcome guest</strong>}
+    {isLoggedIn === true ?  <strong>{username}</strong>: <strong> Welcome guest</strong>}
   </div>
   <div className="col-12">
   {isLoggedIn === true ?  'Joseph.tyler@gmail.com' : <></>}
