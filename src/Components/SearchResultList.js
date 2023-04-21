@@ -1,4 +1,4 @@
-import React from 'react'
+import React ,{useState}from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
 import './SearchResultList.css'
@@ -6,6 +6,10 @@ import './SearchResultList.css'
 export default function SearchResultList(props) {
   const clearSearchResults = () => {
     props.searchResult.setsearchResult(null);
+  }
+  const [imageError, setImageError] = useState('');
+  const handleImageError = () => {
+    setImageError(true);
   }
   console.log(props);
   return (
@@ -19,7 +23,9 @@ return(
   <div key={index} className="card mx-4 my-4" >
   <div className="row g-0">
     <div className="col-4">
-{<img src={`https://s3.amazonaws.com/pillguru/${element.documentId}/${element.imageNameList.includes(';') ? element.imageNameList.split(';')[0] : element.imageNameList}`} className="img-fluid rounded-start" alt="not available" style={{height:'200px',width:'100%',objectFit:'fill'}}/>}  
+    {imageError || !element.imageNameList ?
+     (<img src="./images/image-not-available.jpg" alt="not available" /> ) : (
+      <img src={`https://s3.amazonaws.com/pillguru/${element.documentId}/${element.imageNameList.includes(';') ? element.imageNameList.split(';')[0] : element.imageNameList}`}className="img-fluid rounded-start" alt="not available" onError={handleImageError} style={{ height: '200px', width: '100%', objectFit: 'fill' }}/>)}
   </div>
     <div className="col-8">
       <div className="card-body">

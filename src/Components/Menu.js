@@ -1,11 +1,15 @@
 import React from 'react';
 import './Menu.css'
-import { useSelector } from "react-redux";
+import { useSelector ,useDispatch} from "react-redux";
+import { bindActionCreators } from "redux";
+import { actionCreators } from '../state';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHouse,faNoteSticky,faBell,faUserDoctor,faHeart,faPrescription,faHandHoldingMedical ,faClipboard,faCircleExclamation,faGear} from '@fortawesome/free-solid-svg-icons'
+import { faChartLine ,faHouse,faNoteSticky,faBell,faUserDoctor,faHeart,faPrescription,faHandHoldingMedical ,faClipboard,faCircleExclamation,faGear} from '@fortawesome/free-solid-svg-icons'
 
 function Menu() {
   const isLoggedIn = useSelector(state => state.isLoggedIn.state);
+  const dispatch = useDispatch();
+  const actions = bindActionCreators(actionCreators , dispatch);
   const username = useSelector(state => state.isLoggedIn.username);
   return (
     <div>
@@ -36,10 +40,10 @@ function Menu() {
 </div>
 <div className="offcanvas-body">
 <ul className="list-group">
-{/* <li className="list-group-item d-flex active justify-content-between align-items-center">
+{ <li className="list-group-item d-flex justify-content-between align-items-center">
 <FontAwesomeIcon icon={faChartLine} /><span>Dashboard</span>
   <span className="badge bg-primary rounded-pill">14</span>
-</li> */}
+</li> }
 <li className="list-group-item d-flex active justify-content-between align-items-center">
 <FontAwesomeIcon icon={faHouse} /><span>Home</span>
   <span className="badge bg-primary rounded-pill">2</span>
@@ -87,6 +91,12 @@ function Menu() {
 <li className="list-group-item d-flex justify-content-between align-items-center">
 <FontAwesomeIcon icon={faGear} /><span>Settings</span>
   <span className="badge bg-primary rounded-pill">1</span>
+</li>
+<li className="list-group-item d-flex justify-content-between align-items-center">
+{
+isLoggedIn === true ? <button type="button" className="btn btn-danger" onClick={()=>{actions.logout()}}>Logout</button>:
+<button type="button" className="btn btn-success" onClick={()=>{actions.login()}}>Login</button>
+}
 </li>
 </ul>
 </div>

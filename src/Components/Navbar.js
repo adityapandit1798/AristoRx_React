@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import { bindActionCreators } from "redux";
 import { actionCreators } from '../state';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faBars , faCaretDown } from '@fortawesome/free-solid-svg-icons'
 
 function Navbar() {
   const isLoggedIn = useSelector(state => state.isLoggedIn.state);
@@ -20,10 +20,25 @@ function Navbar() {
             <img className="navbar-logo" src="./images/AristoNewLogo.svg" alt='logo'/>
           </div>
         <div className="d-flex">
-          {isLoggedIn === true ? <button type="button" className="btn btn-danger" onClick={()=>{actions.logout()}}>Logout</button>
+
+
+          <div className="dropdown">
+            <button type="button" className="btn btn-outline-dark" data-bs-toggle="dropdown" aria-expanded="false">
+            <FontAwesomeIcon icon={faCaretDown}/>
+        </button>
+        <ul className="dropdown-menu dropdown-menu-end">
+          <li><a className="dropdown-item" href="/">Action</a></li>
+          <li><a className="dropdown-item" href="/">Another action</a></li>
+          <li><a className="dropdown-item" href="/">Something else here</a></li>
+          <li><hr className="dropdown-divider"/></li>
+          {isLoggedIn === true ?  <li className="dropdown-item" onClick={()=>{actions.logout()}} >Logout</li>
           :
-          <button type="button" className="btn btn-success" onClick={()=>{actions.login()}}>Login</button>
+          <li className="dropdown-item" onClick={()=>{actions.login()}} >Login</li>
         }
+        </ul>
+      </div>
+
+        
         
          </div>
   </div>
